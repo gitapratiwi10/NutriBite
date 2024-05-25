@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="asset/gp2.png" type="image/x-icon">
+    <title>NutriBite</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+<div class="container">
+    <nav id="header">
+            <div class="nav-logo">
+                <a href="index.html"><img src="asset/logo.png" alt="logo"></a>
+            </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="bahan.html" class="nav-link">Bahan</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="hitungakg.html" class="nav-link">Hitung AKG</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="artikel.html" class="nav-link">Artikel</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="login.html" class="btn">Masuk <i class="uil-import"></i></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+</div>
+
+<br>
+
+<div class="name-makanan">
+    <h1>Soto Semarang</h1>
+</div>
+
+<section class="deskripsi">
+    
+    <div class="deskripsi-2">
+        <div class="img-des">
+            <img src="asset/soto.jpg" alt="soto">
+        </div>
+        <div class="des-teks">
+            <h2>Deskripsi</h2>
+            <p>hidangan yang terdiri dari irisan daging ayam yang dilumuri bumbu, 
+                kemudian diisi dengan campuran sayuran seperti wortel dan kacang polong.
+                Kemudian, daging ayam tersebut digulung dan dipanggang atau digoreng hingga matang.</p>
+            <h3>Porsi untuk 3 orang</h3>
+            <div class="rat-des">
+                <div class="rating-des">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <h4> 5</h4>
+            </div>
+            <div class="icon-simpan-love">
+                <i class="fas fa-bookmark"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="langkah">
+    <div class="langkah-1">
+        <div class="langkah-2">
+            <div class="bahan-utama">
+                <h2>Bahan Utama</h2>
+                <p> - 150 gr daging ayam cincang <br>
+                    - 60 gr hati ayam, direbus dan dicincang halus <br>
+                    - 45 g wortel <br>
+                    - 100 g bihun basah <br>
+                    - 30 ml minyak sayur <br>
+                    - 1 batang daun bawang <br>
+                    - 2 siung bawang putih, haluskan <br>
+                    - 20 g tepung sagu <br>
+                    - 1.2 sdt garam <br>
+                    - lada secukupnya <br>
+                    - 1 butir telur <br>
+                    - Daun Pisang <br>
+                    - Minyak goreng scukupnya</p>
+                <h2>Langkah-langkah</h2>
+                <p> 1. Kocok telur dan air, kemudian tambahkan tepung terigu dan garam. Aduk
+                    hingga merata <br>
+                    2. Panaskan wajan, kemudian dadar adonan setipis mungkin. Lalu sisihkan. <br>
+                    3. Tumis bawang putih hingga harum. Masukkan daging ayam cincang aduk
+                    sampai berubah warna. Kemudian masukkan hati ayam, bihun basah, daun
+                    bawang, dan parutan wortel. Kemudian tambahkan garam dan lada
+                    secukupnya. <br>
+                    4. Tambahan tepung sagu yang sudah ditambahkan air untuk mengentalkan
+                    adonan. <br>
+                    5. Ambil satu lembar kulit lumpia, tambahkan adonan kemudian gulung dan
+                    lapisi menggunakan daun pisang. <br>
+                    6. Kukus selama 30 menit. <br>
+                    7. Kemudian bisa dipotong, celupkan kedalam telur lalu digoreng
+                    </p>
+            </div>
+        </div>
+        <div class="gizi-timer">
+            <div class="timer-gizi">
+                <div class="timer">
+                    <h2>Timer</h2>
+                    <div class="time-display">
+                        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+                    <button id="reset-button">Setel Ulang</button>
+                    <div class="icon-buttons">
+                        <i class="uil uil-trash-alt"></i>
+                        <i class="uil uil-play"></i>
+                        <i class="uil uil-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="timer-gizi-2">
+                <div class="gizi">
+                    <h2>Informasi nilai gizi per porsi</h2>
+                    <div class="gizi-info">
+                        <div class="gizi-item">
+                            <h4>Kalori</h4>
+                            <p id="kalori">519,7 kkal</p>
+                        </div>
+                        <div class="gizi-item">
+                            <h4>Karbohidrat</h4>
+                            <p id="karbohidrat">22,7 g</p>
+                        </div>
+                        <div class="gizi-item">
+                            <h4>Protein</h4>
+                            <p id="protein">26,4 g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="informasi">
+    <div class="infor-penting">
+        <h3>INFORMASI PENTING</h3>
+        <p>*Estimasi nilai gizi bisa berubah tergantung pada jenis bahan dan cara memasaknya. <br>
+            *Perhatikan variasi tersebut, terutama berdasarkan merek atau jenis bahan yang digunakan. <br>
+            *Pastikan mengikuti instruksi pada resep untuk menghindari pengurangan Nutrisi pada makanan.</p>
+    </div>
+</section>
+
+<section class="komentar">
+    <div class="header-komentar">
+        <div class="name-coment">
+            <h2>Comment</h2>
+        </div>
+        <div class="tombol-komentar">
+            <button>kirim komentar</button>
+        </div>
+    </div>
+    <div class="semua-komentar">
+        <div class="tampil-comment-wrapper">
+            <div class="tampil-comment">
+                <img src="asset/ayam.jpg" alt="profil">
+                <div class="kolom-komentar">
+                    <div class="nama-komentar">
+                        <h3>nama</h3>
+                        <h3>tanggal</h3>
+                    </div>
+                    <div class="tempat-komen">
+                        Komentar pengguna akan ditampilkan di sini.
+                    </div>
+                    <div class="tombol-komen">
+                        <i class="uil uil-trash-alt"></i>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tampil-comment">
+                <img src="asset/ayam.jpg" alt="profil">
+                <div class="kolom-komentar">
+                    <div class="nama-komentar">
+                        <h3>nama</h3>
+                        <h3>tanggal</h3>
+                    </div>
+                    <div class="tempat-komen">
+                        Komentar pengguna akan ditampilkan di sini.
+                    </div>
+                    <div class="tombol-komen">
+                        <i class="uil uil-trash-alt"></i>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tampil-comment">
+                <img src="asset/ayam.jpg" alt="profil">
+                <div class="kolom-komentar">
+                    <div class="nama-komentar">
+                        <h3>nama</h3>
+                        <h3>tanggal</h3>
+                    </div>
+                    <div class="tempat-komen">
+                        Komentar pengguna akan ditampilkan di sini.
+                    </div>
+                    <div class="tombol-komen">
+                        <i class="uil uil-trash-alt"></i>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tampil-comment">
+                <img src="asset/ayam.jpg" alt="profil">
+                <div class="kolom-komentar">
+                    <div class="nama-komentar">
+                        <h3>nama</h3>
+                        <h3>tanggal</h3>
+                    </div>
+                    <div class="tempat-komen">
+                        Komentar pengguna akan ditampilkan di sini.
+                    </div>
+                    <div class="tombol-komen">
+                        <i class="uil uil-trash-alt"></i>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- --------------- FOOTER --------------- -->
+<footer>
+    <div class="top-footer">
+        <img src="asset/logo2.png" alt="logo">
+    </div>
+    <div class="footer-p">
+        <p>Setiap gigitan merupakan petualangan rasa yang seru dan menyehatkan, karena </p>
+        <p>mengandung nutrisi berkualitas yang memberikan kekuatan bagi jiwa dan raga.</p>
+    </div>
+    <div class="footer-social-icons">
+                <a href="https://www.instagram.com/gtaprtwi_/"  target="_blank"><div class="icon"><i class="uil-twitter-alt"></i></div></a>
+                <a href="https://www.linkedin.com/in/gitapratiw/"  target="_blank"><div class="icon"><i class="uil-facebook-f"></i></div></a>
+                <a href="https://www.github.com/gitapratiwi10/"  target="_blank"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                <a href="https://www.github.com/gitapratiwi10/"  target="_blank"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="bottom-footer">
+        <p>&copy; Copyright 2024, All rights reserved by<a href="#home" style="text-decoration: none; color: inherit"> NutriBite</a></p>
+    </div>
+</footer>
+
+<!-- ----- animasi typing link ----- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- ----- scroll link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- ----- main js ----- -->
+<script src="mainJs.js"></script>
+</body>
+</html>

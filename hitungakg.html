@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="asset/gp2.png" type="image/x-icon">
+    <title>NutriBite</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+<div class="container">
+    <nav id="header">
+            <div class="nav-logo">
+                <a href="index.html"><img src="asset/logo.png" alt="logo"></a>
+            </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="bahan.html" class="nav-link">Bahan</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="hitungakg.html" class="nav-link active-link">Hitung AKG</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="artikel.html" class="nav-link">Artikel</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <div class="profile-container">
+                <a href="pageUser.html">
+                    <div class="profile-icon">
+                        <i class="uil uil-user"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+</div>
+
+<section class="hitungakg" id="hitungakag">
+    <div class="name-hitungakg">
+        <h1>Hitung Angka Kecukupan Gizi (AKG)</h1>
+    </div>
+    <div class="des-hitung-akg">
+        <div class="deskripsi-akg">
+            <p>Perhitungan AKG disesuaikan sesuai dengan beberapa variabel individu, termasuk usia, berat badan, tinggi badan, dan jenis kelamin.</p>
+            <center><img src="asset/grafikkalori.jpg" alt=""></center>
+            <center><p style="color: rgba(255, 0, 0, 0.769);">*Berdasarkan AKG dari 2000 kalori</p></center>
+            <p>Setelah AKG ditentukan, semua informasi mengenai makanan, pencatatan harian makanan, dan jadwal diet akan tersedia bersamaan dengan AKG tersebut dalam ingatan Anda.</p><br>
+            <center><img src="asset/rinciankalori.jpg" alt=""></center>
+            <center><p style="color: rgba(255, 0, 0, 0.769);">*contoh</p></center>
+            <p>Anda bisa memeriksa informasi rinci tentang kalori yang berasal dari lemak, karbohidrat, dan protein dalam makanan, bersama dengan catatan makanan dan jadwal diet. Hal ini bermanfaat bagi Anda yang ingin mengatur asupan gizi dengan lebih spesifik.
+            </p><br>
+            <p>Anda dapat menyesuaikan AKG kapanpun diperlukan, dan kemajuan Anda akan dinilai berdasarkan AKG yang diperbarui di masa mendatang.</p>
+        </div>
+        <div class="hitung-akg-anda">
+            <h2>Hitung AKG Anda</h2>
+            <form>
+                <div>
+                    <label for="usia">Usia:</label>
+                    <input type="number" id="usia" placeholder="Masukkan usia" class="input-field">
+                </div>
+                <div>
+                    <label for="berat">Berat Badan:</label>
+                    <input type="number" id="berat" placeholder="Masukkan berat badan" class="input-field">
+                    <span class="unit"> kg</span>
+                </div>
+                <div>
+                    <label for="tinggi">Tinggi Badan:</label>
+                    <input type="number" id="tinggi" placeholder="Masukkan tinggi badan" class="input-field">
+                    <span class="unit"> cm</span>
+                </div>
+                <div class="page-jen-kel">
+                    <div class="jen-kel">
+                        <p>Jenis Kelamin:</p>
+                    </div>
+                    <div class="jenis-kelamin">
+                        <div class="radio-group">
+                            <label for="laki-laki"><input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki"> Laki-laki</label>
+                            <label for="perempuan"><input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan"> Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="hitung-btn"><a href="hasilakg.html">Hitung AKG</a></button>
+            </form>
+        </div>    
+    </div>
+</section>
+
+<!-- --------------- FOOTER --------------- -->
+<footer>
+    <div class="top-footer">
+        <img src="asset/logo2.png" alt="logo">
+    </div>
+    <div class="footer-p">
+        <p>Setiap gigitan merupakan petualangan rasa yang seru dan menyehatkan, karena </p>
+        <p>mengandung nutrisi berkualitas yang memberikan kekuatan bagi jiwa dan raga.</p>
+    </div>
+    <div class="footer-social-icons">
+                <a href="https://www.instagram.com/gtaprtwi_/"  target="_blank"><div class="icon"><i class="uil-twitter-alt"></i></div></a>
+                <a href="https://www.linkedin.com/in/gitapratiw/"  target="_blank"><div class="icon"><i class="uil-facebook-f"></i></div></a>
+                <a href="https://www.github.com/gitapratiwi10/"  target="_blank"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                <a href="https://www.github.com/gitapratiwi10/"  target="_blank"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="bottom-footer">
+        <p>&copy; Copyright 2024, All rights reserved by<a href="#home" style="text-decoration: none; color: inherit"> NutriBite</a></p>
+    </div>
+</footer>
+<!-- ----- animasi typing link ----- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- ----- scroll link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- ----- main js ----- -->
+<script src="mainJs.js"></script>
+</body>
+</html>
